@@ -30,7 +30,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <Navbar />
       
       {/* 2. HEADER CU IMAGINE (MINI-HERO) */}
-      <section className="relative pt-40 pb-20 overflow-hidden shadow-lg">
+      <section className="relative pb-20 overflow-hidden shadow-lg">
         
         {/* Imaginea de fundal */}
         <div className="absolute inset-0">

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import ProductCard from '@/components/ProductCard';
+import ProductGrid from '@/components/ProductGrid';
 import ShopFilters from '@/components/ShopFilters';
 import MobileControlBar from '@/components/MobileControlBar';
 import { Product } from '@/data/products';
@@ -22,35 +22,27 @@ export default function CategoryContent({ products }: CategoryContentProps) {
         onOpenFilters={() => setFiltersOpen(true)} 
       />
 
-      {/* Conținut Principal (Filtre + Produse) */}
+      {/* Conitinut Principal (Filtre + Produse) */}
       <section className="py-12 container mx-auto px-6 flex-grow relative z-0">
         <div className="flex flex-col lg:flex-row gap-8 items-start">
           
           {/* Componenta Filtre (Sidebar Desktop + Drawer Mobil) */}
           <ShopFilters 
             externalOpen={filtersOpen} 
-            onExternalClose={() => setFiltersOpen(false)} 
+            onExternalClose={() => setFiltersOpen(false)}
           />
 
           {/* Grid Produse */}
           <div className="flex-1 w-full">
              {products.length > 0 ? (
-               <div className={`grid gap-6 pb-20 lg:pb-0 ${
-                 viewMode === 'grid' 
-                   ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4' 
-                   : 'grid-cols-1'
-               }`}> 
-                  {products.map(product => (
-                     <ProductCard key={product.id} product={product} />
-                  ))}
-               </div>
+               <ProductGrid products={products} viewMode={viewMode} setViewMode={setViewMode} />
              ) : (
                <div className="text-center py-24 bg-white rounded-3xl border border-dashed border-slate-200 shadow-sm">
                   <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">📦</span>
+                    <span className="text-2xl">??</span>
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900">Nu există produse momentan</h3>
-                  <p className="text-slate-500 font-medium">Această categorie este în curs de actualizare.</p>
+                  <h3 className="text-lg font-bold text-slate-900">Nu exist produse momentan</h3>
+                  <p className="text-slate-500 font-medium">Aceast categorie este în curs de actualizare.</p>
                </div>
              )}
           </div>
