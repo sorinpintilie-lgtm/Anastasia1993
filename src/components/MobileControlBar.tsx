@@ -10,7 +10,7 @@ interface MobileControlBarProps {
 
 export default function MobileControlBar({ viewMode, setViewMode, onOpenFilters }: MobileControlBarProps) {
   return (
-    <div className="lg:hidden sticky top-[128px] z-40 bg-white border-b border-slate-100 shadow-sm">
+    <div className="lg:hidden sticky top-[96px] z-40 bg-white border-b border-slate-100 shadow-sm">
       <div className="grid grid-cols-3 divide-x divide-slate-100">
         {/* Sortare */}
         <button className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-slate-700 active:bg-slate-50">

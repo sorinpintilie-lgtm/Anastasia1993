@@ -22,7 +22,7 @@ export default function CategoryContent({ products }: CategoryContentProps) {
         onOpenFilters={() => setFiltersOpen(true)} 
       />
 
-      {/* Conitinut Principal (Filtre + Produse) */}
+      {/* Conținut Principal (Filtre + Produse) */}
       <section className="py-12 container mx-auto px-6 flex-grow relative z-0">
         <div className="flex flex-col lg:flex-row gap-8 items-start">
           
@@ -39,10 +39,10 @@ export default function CategoryContent({ products }: CategoryContentProps) {
              ) : (
                <div className="text-center py-24 bg-white rounded-3xl border border-dashed border-slate-200 shadow-sm">
                   <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">??</span>
+                    <span className="text-2xl">📦</span>
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900">Nu exist produse momentan</h3>
-                  <p className="text-slate-500 font-medium">Aceast categorie este în curs de actualizare.</p>
+                  <h3 className="text-lg font-bold text-slate-900">Nu există produse momentan</h3>
+                  <p className="text-slate-500 font-medium">Această categorie este în curs de actualizare.</p>
                </div>
              )}
           </div>

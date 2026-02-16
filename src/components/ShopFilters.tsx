@@ -81,7 +81,7 @@ export default function ShopFilters({ externalOpen, onExternalClose }: ShopFilte
   return (
     <>
       {/* 1. SIDEBAR DESKTOP */}
-      <aside className="hidden lg:block w-64 flex-shrink-0 sticky top-[128px] h-fit z-30">
+      <aside className="hidden lg:block w-64 flex-shrink-0 sticky top-[96px] h-fit z-30">
         <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
            <div className="space-y-6">
               <div className="relative">

@@ -114,7 +114,7 @@ export default function ProductGrid({ products, viewMode, setViewMode }: Product
   return (
     <div>
       {/* Header cu butoane (Vizibil doar pe Desktop, pe mobil avem bara sticky) */}
-      <div className="hidden lg:flex sticky top-[128px] z-40 bg-white border-b justify-between items-center mb-6 py-3 -mx-6 px-6">
+      <div className="hidden lg:flex sticky top-[96px] z-40 bg-white border-b justify-between items-center mb-6 py-3 -mx-6 px-6">
          <p className="text-slate-500 text-sm">
             Am găsit <span className="font-bold text-slate-900">{products.length}</span> produse
          </p>

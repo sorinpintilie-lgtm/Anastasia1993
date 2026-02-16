@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CategoryContent from '@/components/CategoryContent';
+import PromoBar from '@/components/PromoBar';
 import { productsData } from '@/data/products';
 
 // 1. Definim imaginile pentru fiecare categorie (imagini locale)
@@ -27,10 +28,15 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
 
   return (
     <main className="min-h-screen bg-slate-50 flex flex-col">
-      <Navbar />
       
-      {/* 2. HEADER CU IMAGINE (MINI-HERO) */}
-      <section className="relative pb-20 overflow-hidden shadow-lg">
+      {/* Sticky Header Stack */}
+      <div className="sticky top-0 z-50">
+        <PromoBar />
+        <Navbar />
+      </div>
+      
+      {/* Mini Hero */}
+      <section className="relative pt-24 pb-20 overflow-hidden shadow-lg">
         
         {/* Imaginea de fundal */}
         <div className="absolute inset-0">

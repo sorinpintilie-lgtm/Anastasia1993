@@ -1,6 +1,6 @@
 export default function PromoBar() {
   return (
-    <div className="promo-bar fixed top-0 left-0 w-full bg-[#F2B94B] text-[#1F2933] z-[9999] border-b border-[rgba(0,0,0,0.1)] text-[15px] leading-[1.2] font-normal flex items-center justify-center">
+    <div className="promo-bar w-full bg-[#F2B94B] text-[#1F2933] border-b border-[rgba(0,0,0,0.1)] text-[15px] leading-[1.2] font-normal flex items-center justify-center">
       
       {/* Desktop Content */}
       <div className="promo-desktop hidden md:flex justify-between items-center w-full max-w-[1240px] px-5 h-full mx-auto">

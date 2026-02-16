@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="header sticky top-[48px] z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <nav className="header bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between gap-4 md:gap-8">
         
         <Link href="/" className="flex items-center gap-2 cursor-pointer flex-shrink-0">
