@@ -62,10 +62,14 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
             
             <p className="text-slate-200 text-lg max-w-xl drop-shadow-md">
               Echipamente profesionale selectate pentru eficiență maximă.
-              <span className="ml-3 text-white font-bold bg-white/10 px-2 py-1 rounded-lg border border-white/20 text-sm">
-                 {products.length} Produse
-              </span>
             </p>
+
+            <div className="mt-4 flex items-center gap-2">
+              <span className="text-sm text-slate-300">Total:</span>
+              <span className="whitespace-nowrap text-white font-semibold bg-white/10 px-3 py-1 rounded-lg border border-white/20 text-sm">
+                {products.length} produse
+              </span>
+            </div>
           </div>
         </div>
       </section>
